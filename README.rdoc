@@ -1,6 +1,6 @@
 = faker-stoked
 
-Description goes here.
+This is an extension of the faker gem, allowing stoked bros and bro-ladies to effortlessly generate stoked bios, that are both radical and awesome while simultaneously pitted.  
 
 == Contributing to faker-stoked
  
