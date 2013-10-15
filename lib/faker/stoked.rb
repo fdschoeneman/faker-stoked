@@ -1,1 +1,1 @@
-require 'faker_bro'
+require 'faker_review'

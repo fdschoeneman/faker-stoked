@@ -2,6 +2,24 @@
 
 This is an extension of the faker gem, allowing stoked bros and brodies to effortlessly generate stoked bios, that are both radical and awesome while simultaneously pitted.  
 
+== Installation
+
+with Bundler, add it to your Gemfile:
+
+>  gem 'faker'
+
+or do:
+
+> gem install faker
+
+
+== Usage
+
+* require "stoked"
+
+Faker::stoked.bio
+
+
 == Contributing to faker-stoked
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
