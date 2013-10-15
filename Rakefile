@@ -18,7 +18,9 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/fdschoeneman/faker-stoked"
   gem.license = "MIT"
   gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{This is an extension of the faker gem, allowing stoked 
+    bros and bro-ladies to effortlessly generate stoked bios, that are both 
+    radical and awesome while simultaneously pitted.}
   gem.email = "fred.schoeneman@gmail.com"
   gem.authors = ["Frederick D. Schoeneman"]
   # dependencies defined in Gemfile
@@ -30,14 +32,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
