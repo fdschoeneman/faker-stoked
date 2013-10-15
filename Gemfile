@@ -6,17 +6,10 @@ source "http://rubygems.org"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
-<<<<<<< HEAD
+
 	gem "faker", "~>1.2.0"
   gem "minitest", ">= 0"
   gem "rdoc", "~> 3.12"
   gem "bundler", "~> 1.0"
   gem "jeweler", "~> 1.8.7"
-=======
-  gem "shoulda", ">= 0"
-  gem "rdoc", "~> 3.12"
-  gem "bundler", "~> 1.0"
-  gem "jeweler", "~> 1.8.7"
-  gem "rcov", ">= 0"
->>>>>>> 4958ea3313f0cfaa9e27d0d6068ae1458e6b0092
 end
