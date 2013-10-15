@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "faker-stoked"
   gem.homepage = "http://github.com/fdschoeneman/faker-stoked"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
+  gem.summary = %Q{Stoke up your dev data, bro.}
   gem.description = %Q{This is an extension of the faker gem, allowing stoked 
     bros and bro-ladies to effortlessly generate stoked bios, that are both 
     radical and awesome while simultaneously pitted.}
