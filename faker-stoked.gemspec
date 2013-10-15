@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Frederick D. Schoeneman"]
   s.date = "2013-10-15"
-  s.description = "This is an extension of the faker gem, allowing stoked \n    bros and bro-ladies to effortlessly generate stoked bios, that are both \n    radical and awesome while simultaneously pitted."
+  s.description = "This is an extension of the faker gem, allowing stoked bros and flos to effortlessly generate stoked bios, that are both radical and awesome while simultaneously pitted."
   s.email = "fred.schoeneman@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.3"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Stoke up your dev data, bro."
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
