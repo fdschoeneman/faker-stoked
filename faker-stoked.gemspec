@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "faker-stoked"
-  s.version = ""
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Frederick D. Schoeneman"]
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
+    "VERSION",
     "faker-stoked.gemspec",
     "faker_bro.rb",
     "faker_review.rb",
