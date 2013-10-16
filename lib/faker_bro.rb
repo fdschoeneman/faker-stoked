@@ -8,10 +8,6 @@ module Faker
         ["Shredding sick pow"].sample
       end
 
-      def camera_mount
-        ["head strap", "chesty", "junior chesty", "jaws", "suction cup", "roll bar"].sample
-      end
-
       def olympian_country
         %w[Canada US Russia Japan China Australia Norway Austria Finland Sweden Germany Poland Belarus].sample
       end
