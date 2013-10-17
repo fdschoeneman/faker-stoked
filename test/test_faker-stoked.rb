@@ -1,8 +1,20 @@
 require 'helper'
 
-class TestFakerStoked < MiniTest::Unit::TestCase
+class TestFakerStoked < Minitest::Test
   
-  def test_something_for_real
-    # flunk "hey buddy, you should probably rename this file and start testing for real"
+  describe "bloocher" do 
+
+  	stoked_methods = Faker::Stoked.methods - Object.methods
+
+  	stoked_methods.each do |method|
+
+  		if method.to_s. == method.to_s
+
+	  		it "#{method} should not be empty" do 
+
+	  			Faker::Stoked.respond_to?(method)
+	  		end
+	  	end
+  	end
   end
 end

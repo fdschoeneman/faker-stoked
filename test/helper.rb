@@ -7,14 +7,13 @@ rescue Bundler::BundlerError => e
   $stderr.puts "Run `bundle install` to install missing gems"
   exit e.status_code
 end
-
-require 'minitest/unit'
+require 'minitest/autorun'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-require 'faker-stoked'
+require 'faker/stoked'
 
-class MiniTest::Unit::TestCase
-end
+# class MiniTest::Unit::TestCase
+# end
 
-MiniTest::Unit.autorun
+# MiniTest::Unit.autorun

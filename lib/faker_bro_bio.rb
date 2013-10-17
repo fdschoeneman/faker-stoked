@@ -4,26 +4,6 @@ module Faker
   
     class << self
   
-      def olympic_event
-        ["Shredding sick pow"].sample
-      end
-
-      def olympian_country
-        %w[Canada US Russia Japan China Australia Norway Austria Finland Sweden Germany Poland Belarus].sample
-      end
-
-      def olympian_music
-        [
-          "Miley Cyrus", "Robin Thicke", "MGMT", "Katy Perry", "Drake", 
-          "One Direction", "Gordon Lightfoot"
-        ].sample
-      end
-
-      def olympian_home_region
-
-        ["Whistler", "Lake Tahoe", "Sarajevo", "Nepal", "Lake Placid","Alps","Bavaria","Grand Tetons"]
-      end
-
       def bio
         first = adj.capitalize + " " + intmodifier + " " + adj + " " + "snowboarder" + ". "
         second = adverb.capitalize + " " + olympian_hobby + ", " + adj + " " + olympian_hobby + ", " + strength + "."
