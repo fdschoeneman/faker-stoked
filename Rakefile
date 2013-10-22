@@ -18,9 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/fdschoeneman/faker-stoked"
   gem.license = "MIT"
   gem.summary = %Q{Stoke up your dev data, bro.}
-  gem.description = %Q{This is an extension of the faker gem, allowing stoked 
-    bros and bro-ladies to effortlessly generate stoked bios, that are both 
-    radical and awesome while simultaneously pitted.}
+  gem.description = %Q{This is an extension of the faker gem, allowing stoked bros and brodies to effortlessly generate stoked bios, that are both radical and awesome while simultaneously pitted.  It also provides a rich, creamy variety of methods to generate bro words.}
   gem.email = "fred.schoeneman@gmail.com"
   gem.authors = ["Frederick D. Schoeneman"]
   # dependencies defined in Gemfile
