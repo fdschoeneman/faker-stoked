@@ -5,15 +5,9 @@ module Faker
     class << self
   
       def bio
-        first = adj.capitalize + " " + intmodifier + " " + adj + " " + "snowboarder" + ". "
-        second = adverb.capitalize + " " + olympian_hobby + ", " + adj + " " + olympian_hobby + ", " + strength + "."
+        first = broscription.capitalize + " " + intmodifier + " " + broscription + " " + sport + ". "
+        second = bro_verb.capitalize + " " + bro_hobby + ", " + broscription + " " + bro_hobby + ", " + brozak + "."
         first + second
-      end
-
-      def adj 
-        %w[ awesome radical rad bodacious free-spirited cerebral all-natural american-made
-         stoked stokealicious stokified stokastic fearless 
-        ].sample
       end
 
       def intmodifier
@@ -23,28 +17,28 @@ module Faker
         ].sample
       end
 
-      def olympic_sport
+      def sports
         [  
-          "figure skater","speed skater","short track speed skater","ice hockey player",
+          "figure skater",
+          "speed skater",
+          "short track speed skater",
+          "ice hockey player",
           "curler",
-          "cross-country skier","nordic skier","alpine racer",
-          "ski jumper","freestyle skier","snowboarder","biathlete","Luger","bobsleigher",
+          "cross-country skier",
+          "nordic skier",
+          "alpine racer",
+          "ski jumper",
+          "freestyle skier",
+          "snowboarder",
+          "biathlete",
+          "Luger",
+          "bobsleigher",
           "skeleton rider"
-        ].sample
+        ]
       end
 
-      def adverb
-        [ 
-          "loves","amazed by","stoked for","Spends free time"
-        ].sample
-      end
-
-      def olympian_hobby
-        [
-          "hamburgers", "world peace","techno dancing","my mom","teachers","painting",
-          "Miley Cyrus","GoPro","country music","defying death",
-          "defying that which should be defied","work with orphans","raising money for cancer"
-        ].sample
+      def sport
+        sports.sample
       end
 
       def strength 

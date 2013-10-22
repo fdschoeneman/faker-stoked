@@ -3,7 +3,7 @@ module Faker
   class Stoked
 
     class << self
-      def bronoun
+      def bronouns
         [
           "barack brobama",
           "don quibrote",
@@ -42,10 +42,14 @@ module Faker
           "brobo cop",
           "brodin, the sculptor",
           "Brobespierre"
-        ].sample
+        ]
       end
 
-      def bromebase
+      def bronoun
+        bronouns.sample
+      end
+
+      def brobases
         [
           "Brohannesberg",
           "Bromerica",
@@ -54,10 +58,14 @@ module Faker
           "Broklahoma",
           "Brolivia",
           "Bromania"
-        ].sample
+        ]
+      end
+
+      def brobase
+        bronouns.sample
       end
       
-      def bro_job
+      def bro_jobs
         [ 
           "Astbronaut",
           "brommando",
@@ -68,11 +76,14 @@ module Faker
           "amateur broxer",
           "brotist",
           "brotanist"
-        ].sample
-
+        ]
       end
 
-      def bro_food
+      def bro_job
+        bro_jobs.sample
+      end
+
+      def bro_foods
         [ 
           "macabroni and cheese",
           "bro-chop",
@@ -84,13 +95,21 @@ module Faker
           "broast chicken breast",
           "brorito",
           "bro-b-q"
-        ].sample
+        ]
+      end
+
+      def bro_food
+        bro_foods.sample
       end
       
-      def broscription
+      def broscriptions
 
         [
+          "american-made",
+          "all-natural", 
+          "awesome",
           "brohemian",
+          "brodacious", 
           "broficient",
           "bromazing",
           "bronificent",
@@ -99,22 +118,40 @@ module Faker
           "brotastic",
           "brolicious",
           "bronormous",
-          "brovine",
-          "crack brocaine"
-        ].sample
+          "cerebral", 
+          "fearless",
+          "free-spirited", 
+          "radical", 
+          "rad",
+          "stoked", 
+          "stokealicious", 
+          "stokified",
+          "all stoked up"
+        ]
       end
 
-      def bro_saying
+      def broscription
+        broscriptions.sample
+      end
+
+      def broisms
         
         [
           "bro ho ho",
           "broyo",
           "yobro",
           "hey bro",
-        ].sample
+          "gribbled",
+          "soaked",
+          "Toad"
+        ]
+      end
+
+      def broism
+        broisms.sample
       end
       
-      def bro_thing
+      def bro_things
         
         [ 
           "bromance",
@@ -155,9 +192,9 @@ module Faker
           "brotor broat",
           "brotomic brOmb",
           "broa constrictor",
+          "brocodile",
           "bro-tie",
           "herbrovore",
-          "brocodile",
           "Land Brover",
           "bro and arbrow",
           "broca brola",
@@ -167,73 +204,83 @@ module Faker
           "bromarang",
           "bromobile",
           "brohemian rhapsody",
-        ].sample
+        ]
 
       end
 
-      def camera_mount
-        ["head strap", "chesty", "junior chesty", "jaws", "suction cup", "roll bar"].sample
+      def bro_thing
+        bro_things.sample
+      end
+
+      def brozaks
+        [
+          "Miley Cyrus", 
+          "Robin Thicke", 
+          "MGMT", 
+          "Katy Perry", 
+          "Drake", 
+          "One Direction", 
+          "Tool", 
+          "Warren Zevon", 
+          "Jem", 
+          "Justin Bieber", 
+          "Gordon Lightfoot"
+        ]
       end
 
       def brozak
-        [
-          "Miley Cyrus", "Robin Thicke", "MGMT", "Katy Perry", "Drake", 
-          "One Direction", "Gordon Lightfoot"
-        ].sample
+        brozaks.sample
       end
 
-      def brome_base
-
-        ["Whistler", "Lake Tahoe", "Sarajevo", "Nepal", "Lake Placid","Alps","Bavaria","Grand Tetons"]
-      end
-
-      def biography
-        first = adj.capitalize + " " + intmodifier + " " + adj + " " + "snowboarder" + ". "
-        second = adverb.capitalize + " " + olympian_hobby + ", " + adj + " " + olympian_hobby + ", " + strength + "."
-        first + second
-      end
-
-      def adj 
-        %w[ awesome radical rad bodacious free-spirited cerebral all-natural american-made
-         stoked stokealicious stokified stokastic fearless 
-        ].sample
-      end
-
-      def intmodifier
+      def bro_verbs
         [ 
-          "but","and","almost","but equally","nearly","at the same time", 
-          "yet paradoxically","nevertheless","yet oxymoronically","but inevitably"
-        ].sample
+          "loves",
+          "amazed by",
+          "stoked for",
+          "Spends free time",
+          "pumped about"
+        ]
       end
 
-      def olympic_sport
-        [  
-          "figure skater","speed skater","short track speed skater","ice hockey player",
-          "curler",
-          "cross-country skier","nordic skier","alpine racer",
-          "ski jumper","freestyle skier","snowboarder","biathlete","Luger","bobsleigher",
-          "skeleton rider"
-        ].sample
+      def bro_verb
+        bro_verbs.sample
       end
 
-      def adverb
-        [ 
-          "loves","amazed by","stoked for","Spends free time"
-        ].sample
-      end
-
-      def hobby
+      def bro_hobbies
         [
-          "shredding sick pow", "hamburgers", "world peace","techno dancing","my mom","teachers","painting",
-          "Miley Cyrus","GoPro","country music","defying death",
-          "defying that which should be defied","work with orphans","raising money for cancer"
-        ].sample
+          "defying that which should be defied",
+          "hamburgers", 
+          "painting",
+          "country music",
+          "defying death",
+          "hamburgers", 
+          "kale",
+          "kiteboarding",
+          "techno dancing",
+          "parasailing",
+          "teaching yoga",
+          "teaching broga",
+          "techno dancing",
+          "raising money for breast cancer",
+          "shredding sick pow", 
+          "speedflying",
+          "working with orphans",
+          "world peace"
+        ]
       end
 
-      def strength 
+      def bro_hobby
+        bro_hobbies.sample
+      end
+
+      def strengths 
         [
           "hard charging","forward","strong","outrageous work ethic","endurance"
-        ].sample
+        ]
+      end
+
+      def strength
+        strengths.sample
       end
     end
   end

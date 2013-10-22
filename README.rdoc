@@ -4,20 +4,26 @@ This is an extension of the faker gem, allowing stoked bros and brodies to effor
 
 == Installation
 
-with Bundler, add it to your Gemfile:
+with Bundler, add faker and the faker-stoked gems to your Gemfile:
 
 >  gem 'faker'
-
-or do:
-
-> gem install faker
-
+>  gem 'faker-stoked'
 
 == Usage
 
-* require "stoked"
+> Faker::Stoked.bronoun
+ => "don quibrote"
 
-Faker::stoked.bio
+> Faker::Stoked.bio
+ => "Bodacious but inevitably rad snowboarder. Loves Miley Cyrus, radical defying death, endurance." 
+
+ > Faker::Stoked.bro_food
+ => "broast chicken breast"
+
+ > Faker::Stoked.bro_job
+ => "brogrammer"
+
+
 
 
 == Contributing to faker-stoked

@@ -2,7 +2,7 @@ require 'helper'
 
 class TestFakerStoked < Minitest::Test
   
-  describe "bloocher" do 
+  describe "Stoked" do 
 
   	stoked_methods = Faker::Stoked.methods - Object.methods
 
