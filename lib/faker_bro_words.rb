@@ -62,7 +62,7 @@ module Faker
       end
 
       def brobase
-        bronouns.sample
+        brobases.sample
       end
       
       def bro_jobs
