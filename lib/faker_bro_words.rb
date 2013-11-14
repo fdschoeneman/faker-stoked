@@ -5,6 +5,7 @@ module Faker
     class << self
       def bronouns
         [
+          "Bronan the barbarian",
           "barack brobama",
           "don quibrote",
           "adrien brody",
@@ -68,6 +69,7 @@ module Faker
       def bro_jobs
         [ 
           "Astbronaut",
+          "brothadontist",
           "brommando",
           "broducer",
           "brofessor",
@@ -155,6 +157,7 @@ module Faker
         
         [ 
           "bromance",
+          "broffice bromance",
           "broordinates",
           "brogramming",
           "brodeo",
@@ -214,7 +217,8 @@ module Faker
 
       def brozaks
         [
-          "Miley Cyrus", 
+          "Miley Cyrus",
+          "mc-brohammer", 
           "Robin Thicke", 
           "MGMT", 
           "Katy Perry", 
