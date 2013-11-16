@@ -17,12 +17,26 @@ class TestFakerStoked < Minitest::Test
         end
       end
 
-      if stoked_method.to_s.singularize.to_sym == stoked_method
-        unless standalone_methods.include? stoked_method
+      unless standalone_methods.include? stoked_method
+        
+        if stoked_method.to_s.singularize.to_sym == stoked_method
+          
           it "#{stoked_method} output must be contained in its array" do
-
             stoked_array = Faker::Stoked.send(stoked_method.to_s.pluralize.to_sym)
             stoked_array.must_include Faker::Stoked.send(stoked_method)
+          end
+
+          it "#{stoked_method} must return a string" do 
+            stoked_output = Faker::Stoked.send(stoked_method)
+            stoked_output.class.must_equal String
+          end
+        
+        else
+          
+          it "#{stoked_method} must return an array" do 
+            stoked_output = Faker::Stoked.send(stoked_method)
+            
+            stoked_output.class.must_equal Array
           end
         end
       end
