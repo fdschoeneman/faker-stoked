@@ -10,12 +10,9 @@ class TestFakerStoked < Minitest::Test
     standalone_methods = [:bio, :intmodifier]
     stoked_methods.each do |stoked_method|
 
-      # if stoked_method.to_s. == stoked_method.to_s
-
-        it "must respond to #{stoked_method}" do 
-          Faker::Stoked.must_respond_to(stoked_method.to_sym)
-        end
-      # end
+      it "must respond to #{stoked_method}" do 
+        Faker::Stoked.must_respond_to(stoked_method.to_sym)
+      end
 
       unless standalone_methods.include? stoked_method
         
