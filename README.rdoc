@@ -14,7 +14,8 @@ with Bundler, add faker and the faker-stoked gems to your Gemfile:
     => "don quibrote"
 
   Faker::Stoked.bio
-    => "Bodacious but inevitably rad snowboarder. Loves Miley Cyrus, radical defying death, endurance." 
+    => "Bodacious but inevitably rad snowboarder. Loves Miley Cyrus, radical 
+    defying death, endurance." 
 
   Faker::Stoked.food
     => "broast chicken breast"
@@ -25,7 +26,23 @@ with Bundler, add faker and the faker-stoked gems to your Gemfile:
 And in homage to chomskybot, we have StokeBot:
 
   > Faker::StokeBot.sentences(5)
-    => "For any radicalization which is sufficiently awesome in pursuit of any level of stoke, a subset of stoked concepts interesting on pitted, yet non-determinate grounds cannot be non-pitted in the requirement that stoke-branching is not tolerated within the dominance stoke-scope of a complex bro-symbol. By combining stoke and certain reformulations of the dominant extreme paradigm, the appearance of non-stoked gaps in domains relatively immune to ordinary pitted radicalization can be defined in such a way as to impose the strong generative capacity of the stoke-theory. From the non-racical point of view the fundamental error of regarding bros and/or brodies as less than intellectual is to be regarded as the traditional practice of stoked bros. In the discussion of stoked endeavors following (81), most of the methodological fearlessness rampant in modern stokeology is, apparently, brotesquley cerebralized by the ultimate standard that determines the brohemian level of any proposed radicalization. Presumably, the athlete/groupie constructed intuition or bro-sense is rather bronificent relative to problems of athletic and free-spirited analysis." 
+    => "For any radicalization which is sufficiently awesome in pursuit of any 
+    level of stoke, a subset of stoked concepts interesting on pitted, yet 
+    non-determinate grounds cannot be non-pitted in the requirement that 
+    stoke-branching is not tolerated within the dominance stoke-scope of a 
+    complex bro-symbol. By combining stoke and certain reformulations of the 
+    dominant extreme paradigm, the appearance of non-stoked gaps in domains 
+    relatively immune to ordinary pitted radicalization can be defined in 
+    such a way as to impose the strong generative capacity of the stoke-theory. 
+    From the non-racical point of view the fundamental error of regarding bros 
+    and/or brodies as less than intellectual is to be regarded as the 
+    traditional practice of stoked bros. In the discussion of stoked endeavors 
+    following (81), most of the methodological fearlessness rampant in modern 
+    stokeology is, apparently, brotesquley cerebralized by the ultimate 
+    standard that determines the brohemian level of any proposed 
+    radicalization. Presumably, the athlete/groupie constructed intuition 
+    or bro-sense is rather bronificent relative to problems of athletic and 
+    free-spirited analysis." 
 
 == Contributing to faker-stoked
  
