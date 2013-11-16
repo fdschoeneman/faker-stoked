@@ -1,20 +1,31 @@
 require 'helper'
+require 'active_support/inflector'
+require 'debugger'
 
 class TestFakerStoked < Minitest::Test
   
   describe "Stoked" do 
 
-  	stoked_methods = Faker::Stoked.methods - Object.methods
+    stoked_methods = Faker::Stoked.methods(false)
+    standalone_methods = [:bio, :intmodifier]
+    stoked_methods.each do |stoked_method|
 
-  	stoked_methods.each do |method|
+      if stoked_method.to_s. == stoked_method.to_s
 
-  		if method.to_s. == method.to_s
+        it "#{stoked_method} must not be empty" do 
+          Faker::Stoked.must_respond_to(stoked_method.to_sym)
+        end
+      end
 
-	  		it "#{method} should not be empty" do 
+      if stoked_method.to_s.singularize.to_sym == stoked_method
+        unless standalone_methods.include? stoked_method
+          it "#{stoked_method} output must be contained in its array" do
 
-	  			Faker::Stoked.respond_to?(method)
-	  		end
-	  	end
-  	end
+            stoked_array = Faker::Stoked.send(stoked_method.to_s.pluralize.to_sym)
+            stoked_array.must_include Faker::Stoked.send(stoked_method)
+          end
+        end
+      end
+    end
   end
 end

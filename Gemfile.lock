@@ -1,8 +1,18 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    activesupport (3.2.15)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
     addressable (2.3.5)
     builder (3.2.2)
+    columnize (0.3.6)
+    debugger (1.6.2)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.2.3)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.2.3)
     faker (1.2.0)
       i18n (~> 0.5)
     faraday (0.8.8)
@@ -52,7 +62,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   bundler (~> 1.0)
+  debugger
   faker (~> 1.2.0)
   jeweler (~> 1.8.7)
   minitest

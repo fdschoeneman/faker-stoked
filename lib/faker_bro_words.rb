@@ -3,7 +3,93 @@ module Faker
   class Stoked
 
     class << self
-      def bronouns
+      
+      def fullnames
+        [
+          "ryan courvoisier",
+          "scott browland",
+          "christal heinofear",
+          "April Goldbrosephson",
+          "Jason Galvinized Steelbro",
+          "Melissa Brautista",
+          "Jane Stokebro",
+          "Ryan van Niebro",
+          "Broshad Brosouri",
+          "Suzette Saint-Brobespierre",
+          "Toshibro Sugar",
+          "Adam Brogianti",
+          "Art Brozak",
+          "Nandita Bronon",
+          "Ashley Aristocrunk",
+          "Jennybro Jaynebro",
+          "Brolga Vasserbro",
+          "Bill Brong",
+          "Adam Collinsmix",
+          "Parker Stevenson",
+          "Steve AquiNoFear",
+          "Amy Marcobrolo",
+          "Carlo Mogabrolo",
+          "Braina Turner",
+          "Zavenaire McStallion",
+          "Kevin Woodsostokeditsick",
+          "Natalia Pintotallystoked",
+          "Mike McCrunk",
+          "Nick Brodulik",
+          "Greg Kerzhbro",
+          "Michael Porchbro",
+          "Mya Burrellbro",
+          "Tony Contrerevolutionarybro",
+          "Jeremonious Collyerunk",
+          "Jessicka Hamiltonofstoke",
+          "Jeff Smithsonianinstituteofstokebrology",
+          "Bronathan Taybro",
+          "Devonian Seacreature",
+          "Dan Bronicke",
+          "Daniel StokeStacker",
+          "Kriztopher Menbroza",
+          "GoBraola Cerioli",
+          "Ryan Cobbrolo",
+          "Erock Guzbro",
+          "Steve Hardchargerley"
+        ]
+      end
+
+      def fullname
+        fullnames.sample
+      end
+
+      def firstnames
+        firstnames = []
+        Faker::Stoked.fullnames.each do |fullname|
+          firstnames << fullname.split((/[\s,]+/)).first
+        end
+        firstnames
+      end
+
+      def firstname
+        firstnames.sample
+      end
+
+      def lastnames
+        lastnames = []
+        Faker::Stoked.fullnames.each do |fullname|
+          fullname_array = fullname.split(/[\s,]+/)
+          fullname_array.shift
+          unless @fullname.size == 1
+            @fullname = @fullname.join(" ")
+          end
+          lastnames << @fullname
+          lastnames
+        end
+        debugger
+        lastnames
+      end
+
+      def lastname
+        lastnames.sample
+      end      
+
+      def celebroties
         [
           "Bronan the barbarian",
           "barack brobama",
@@ -35,9 +121,9 @@ module Faker
           "napoleon bronaparte",
           "brosef stalin",
           "brosef stalin",
-          "The Brope",
+          "Brope john paul",
           "Brocahontas",
-          "teddy brosevelt",
+          "teddy broosevelt",
           "mighty bro young",
           "gallilebro gallilei",
           "brobo cop",
@@ -46,11 +132,11 @@ module Faker
         ]
       end
 
-      def bronoun
-        bronouns.sample
+      def celebroty
+        celebroties.sample
       end
 
-      def brobases
+      def places
         [
           "Brohannesberg",
           "Bromerica",
@@ -62,11 +148,11 @@ module Faker
         ]
       end
 
-      def brobase
-        brobases.sample
+      def place
+        places.sample
       end
       
-      def bro_jobs
+      def jobs
         [ 
           "Astbronaut",
           "brothadontist",
@@ -81,62 +167,44 @@ module Faker
         ]
       end
 
-      def bro_job
-        bro_jobs.sample
+      def job
+        jobs.sample
       end
 
-      def bro_foods
+      def foods
         [ 
-          "macabroni and cheese",
-          "bro-chop",
-          "rice-a-broni",
-          "brotato chip",
-          "brosicle",
-          "brOccoli",
-          "brotein shake",
+          "brosghetti",
           "broast chicken breast",
+          "broasted vegetables",
+          "broccoli",
+          "brocaroni",
+          "brochos",
+          "broccoli",
+          "broiled nuts",
+          "broissant",
+          "broloney sammich",
           "brorito",
-          "bro-b-q"
+          "brosicle",
+          "brotato chip",
+          "brotein shake",
+          "brozilian bbq",
+          "bro-b-q",
+          "bro-chop",
+          "fish tacos",
+          "general bro's chicken",
+          "lasagnbro",
+          "macabroni and cheese",
+          "rice-a-broni",
+          "stoke and eggs",
+          "top brahmen"
         ]
       end
 
-      def bro_food
-        bro_foods.sample
+      def food
+        foods.sample
       end
       
-      def broscriptions
-
-        [
-          "american-made",
-          "all-natural", 
-          "awesome",
-          "brohemian",
-          "brodacious", 
-          "broficient",
-          "bromazing",
-          "bronificent",
-          "brorrific",
-          "brotesque",
-          "brotastic",
-          "brolicious",
-          "bronormous",
-          "cerebral", 
-          "fearless",
-          "free-spirited", 
-          "radical", 
-          "rad",
-          "stoked", 
-          "stokealicious", 
-          "stokified",
-          "all stoked up"
-        ]
-      end
-
-      def broscription
-        broscriptions.sample
-      end
-
-      def broisms
+      def sayings
         
         [
           "bro ho ho",
@@ -149,11 +217,11 @@ module Faker
         ]
       end
 
-      def broism
-        broisms.sample
+      def saying
+        sayings.sample
       end
       
-      def bro_things
+      def things
         
         [ 
           "bromance",
@@ -211,11 +279,11 @@ module Faker
 
       end
 
-      def bro_thing
-        bro_things.sample
+      def thing
+        things.sample
       end
 
-      def brozaks
+      def bands
         [
           "Miley Cyrus",
           "mc-brohammer", 
@@ -232,13 +300,35 @@ module Faker
         ]
       end
 
-      def brozak
-        brozaks.sample
+      def band
+        bands.sample
       end
 
-      def bro_verbs
-        [ 
-          "loves",
+      def adjectives
+        [
+          "all-natural", 
+          "american-made",
+          "awesome",
+          "cerebral", 
+          "brohemian",
+          "brodacious", 
+          "broficient",
+          "brolicious",
+          "bromazing",
+          "bronificent",
+          "bronormous",
+          "brorrific",
+          "brotesque",
+          "brotastic",
+          "fearless",
+          "free-spirited", 
+          "radical", 
+          "rad",
+          "stoked", 
+          "stokealicious", 
+          "stokified",
+          "all stoked up",
+          "love",
           "amazed by",
           "stoked for",
           "Spends free time",
@@ -246,11 +336,11 @@ module Faker
         ]
       end
 
-      def bro_verb
-        bro_verbs.sample
+      def adjective
+        adjectives.sample
       end
 
-      def bro_hobbies
+      def interests
         [
           "defying that which should be defied",
           "hamburgers", 
@@ -273,8 +363,8 @@ module Faker
         ]
       end
 
-      def bro_hobby
-        bro_hobbies.sample
+      def interest
+        interests.sample
       end
 
       def strengths 

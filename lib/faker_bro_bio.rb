@@ -5,8 +5,8 @@ module Faker
     class << self
   
       def bio
-        first = broscription.capitalize + " " + intmodifier + " " + broscription + " " + sport + ". "
-        second = bro_verb.capitalize + " " + bro_hobby + ", " + broscription + " " + bro_hobby + ", " + brozak + "."
+        first = description.capitalize + " " + intmodifier + " " + description + " " + sport + ". "
+        second = verb.capitalize + " " + hobby + ", " + description + " " + hobby + ", " + band + "."
         first + second
       end
 
@@ -43,7 +43,11 @@ module Faker
 
       def strength 
         [
-          "hard charging","forward","strong","outrageous work ethic","endurance"
+          "hard charging",
+          "forward",
+          "strong",
+          "outrageous work ethic",
+          "endurance"
         ].sample
       end
     end
