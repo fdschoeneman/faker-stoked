@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "faker-stoked"
-  s.version = "0.1.9"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Frederick D. Schoeneman"]
-  s.date = "2013-11-14"
+  s.date = "2013-11-16"
   s.description = "This is an extension of the faker gem, allowing stoked bros and brodies to effortlessly generate stoked bios, that are both radical and awesome while simultaneously pitted.  It also provides a rich, creamy variety of methods to generate bro words."
   s.email = "fred.schoeneman@gmail.com"
   s.extra_rdoc_files = [
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".ruby-gemset",
+    ".travis.yml",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -35,11 +36,11 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/fdschoeneman/faker-stoked"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.25"
+  s.rubygems_version = "2.0.3"
   s.summary = "Stoke up your dev data, bro."
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<faker>, ["~> 1.2.0"])
@@ -47,12 +48,16 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.7"])
+      s.add_development_dependency(%q<debugger>, [">= 0"])
+      s.add_development_dependency(%q<activesupport>, [">= 0"])
     else
       s.add_dependency(%q<faker>, ["~> 1.2.0"])
       s.add_dependency(%q<minitest>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.7"])
+      s.add_dependency(%q<debugger>, [">= 0"])
+      s.add_dependency(%q<activesupport>, [">= 0"])
     end
   else
     s.add_dependency(%q<faker>, ["~> 1.2.0"])
@@ -60,6 +65,8 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.7"])
+    s.add_dependency(%q<debugger>, [">= 0"])
+    s.add_dependency(%q<activesupport>, [">= 0"])
   end
 end
 
