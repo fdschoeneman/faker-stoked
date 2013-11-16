@@ -6,21 +6,21 @@ This is an extension of the faker gem, allowing stoked bros and brodies to effor
 
 with Bundler, add faker and the faker-stoked gems to your Gemfile:
 
->  gem 'faker'
->  gem 'faker-stoked'
+# gem 'faker'
+# gem 'faker-stoked'
 
 == Usage
 
-> Faker::Stoked.bronoun
+> Faker::Stoked.celebroty
  => "don quibrote"
 
 > Faker::Stoked.bio
  => "Bodacious but inevitably rad snowboarder. Loves Miley Cyrus, radical defying death, endurance." 
 
- > Faker::Stoked.bro_food
+ > Faker::Stoked.food
  => "broast chicken breast"
 
- > Faker::Stoked.bro_job
+ > Faker::Stoked.job
  => "brogrammer"
 
 == Contributing to faker-stoked
