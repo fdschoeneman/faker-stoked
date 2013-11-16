@@ -5,8 +5,8 @@ module Faker
     class << self
   
       def bio
-        first = description.capitalize + " " + intmodifier + " " + description + " " + sport + ". "
-        second = verb.capitalize + " " + hobby + ", " + description + " " + hobby + ", " + band + "."
+        first = adjective.capitalize + " " + intmodifier + " " + adjective + " " + sport + ". "
+        second = opener.capitalize + " " + interest + ", " + adjective + " " + interest + ", " + band + "."
         first + second
       end
 
@@ -39,6 +39,20 @@ module Faker
 
       def sport
         sports.sample
+      end
+
+      def openers
+        [
+          "love",
+          "amazed by",
+          "stoked for",
+          "Spends free time",
+          "pumped about"
+        ]
+      end
+
+      def opener
+        openers.sample
       end
 
       def strength 

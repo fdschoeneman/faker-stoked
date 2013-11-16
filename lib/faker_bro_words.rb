@@ -361,12 +361,7 @@ module Faker
           "stoked", 
           "stokealicious", 
           "stokified",
-          "all stoked up",
-          "love",
-          "amazed by",
-          "stoked for",
-          "Spends free time",
-          "pumped about"
+          "all stoked up"
         ]
       end
 

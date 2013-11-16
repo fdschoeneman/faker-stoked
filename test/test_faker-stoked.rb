@@ -10,12 +10,12 @@ class TestFakerStoked < Minitest::Test
     standalone_methods = [:bio, :intmodifier]
     stoked_methods.each do |stoked_method|
 
-      if stoked_method.to_s. == stoked_method.to_s
+      # if stoked_method.to_s. == stoked_method.to_s
 
-        it "#{stoked_method} must not be empty" do 
+        it "must respond to #{stoked_method}" do 
           Faker::Stoked.must_respond_to(stoked_method.to_sym)
         end
-      end
+      # end
 
       unless standalone_methods.include? stoked_method
         
@@ -39,6 +39,19 @@ class TestFakerStoked < Minitest::Test
             stoked_output.class.must_equal Array
           end
         end
+      end
+    end 
+
+    describe "bio" do 
+
+      it "must return a string" do 
+        bio = Faker::Stoked.bio
+        bio.class.must_equal String
+      end
+
+      it "must be more than a few letters long" do 
+        bio = Faker::Stoked.bio
+        (10..30).to_a.must_include bio.split.size
       end
     end
   end
