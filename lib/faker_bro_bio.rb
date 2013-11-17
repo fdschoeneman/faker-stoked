@@ -7,8 +7,8 @@ module Faker
       # a stoked bro might might need to write a stoked user profile
       #
       # Faker::Stoked.bio
-      # => "Brotastic but stokealicious skeleton rider. Love shredding sick pow, 
-      #     brodacious raising money for breast cancer, Gordon Lightfoot.
+      #   "Brotastic but stokealicious skeleton rider. Love shredding sick pow, 
+      #   brodacious raising money for breast cancer, Gordon Lightfoot.
       def bio
         first = adjective.capitalize + " " + intmodifier + " " + adjective + " " + sport + ". "
         second = opener.capitalize + " " + interest + ", " + adjective + " " + interest + ", " + band + "."

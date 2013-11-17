@@ -55,10 +55,10 @@ module Faker
       end
 
       # Faker::Stoked.fullname
-      # => "Broderick Broeneman"
-      # => "Jeremonious Collyerunk"
-      # => "Jessicka Hamilton"
-      # => "Devonian Brocreature"
+      #   "Broderick Broeneman"
+      #   "Jeremonious Collyerunk"
+      #   "Jessicka Hamilton"
+      #   "Devonian Brocreature"
       def fullname
         fullnames.sample
       end
@@ -72,7 +72,7 @@ module Faker
       end
 
       # Faker::Stoked.firstname
-      # => "Bronathan" 
+      #   "Bronathan" 
       def firstname
         firstnames.sample
       end
@@ -94,10 +94,10 @@ module Faker
       end
 
       # Faker::Stoked.lastname
-      # => "Broeneman"
-      # => "Collyerunk"
-      # => "Hamilton"
-      # => "McStallion"
+      #   "Broeneman"
+      #   "Collyerunk"
+      #   "Hamilton"
+      #   "McStallion"
       def lastname
         lastnames.sample
       end      
@@ -144,10 +144,10 @@ module Faker
       end
 
       # Faker::Stoked.celebroty
-      # => "don quibrote
-      # => "Bronan the barbarian"
-      # => "brodo the hobbit bro"
-      # => "Broba Fett"
+      #   "don quibrote
+      #   "Bronan the barbarian"
+      #   "brodo the hobbit bro"
+      #   "Broba Fett"
 
       def celebroty
         celebroties.sample
@@ -175,7 +175,7 @@ module Faker
       # Somewhere a stoked bro might call home
       # 
       # Faker::Stoked.place
-      # => "stokoslavia"
+      #   "stokoslavia"
       def place
         places.sample
       end
@@ -215,9 +215,9 @@ module Faker
       # Somewhere a stoked bro might do to pay for her brotomobile insurance
       #
       # Faker::Stoked.job
-      # => "brommando"
-      # => "brogrammer"
-      # => "brofessor"
+      #   "brommando"
+      #   "brogrammer"
+      #   "brofessor"
       def job
         jobs.sample
       end
@@ -254,9 +254,9 @@ module Faker
       # Some food that a stoked bro might want to mange
       #
       # Faker::Stoked.food
-      # => "brozilian bbq"
-      # => "broissant"
-      # => "rice-a-broni"
+      #   "brozilian bbq"
+      #   "broissant"
+      #   "rice-a-broni"
       def food
         foods.sample
       end
@@ -277,7 +277,7 @@ module Faker
       # something a stoked bro might say
       #
       # Faker::Stoked.saying
-      # => "bro ho ho"
+      #   "bro ho ho"
       def saying
         sayings.sample
       end
@@ -354,7 +354,7 @@ module Faker
       # something a stoked bro might be intereseted in
       #
       # Faker::Stoked.thing
-      # => "bromarang"
+      #   "bromarang"
       def thing
         things.sample
       end
@@ -379,7 +379,7 @@ module Faker
       # band or musical act a stoked bro might listen to
       #
       # Faker::Stoked.band
-      # => "Gordon Lightfoot"
+      #   "Gordon Lightfoot"
       def band
         bands.sample
       end
@@ -414,7 +414,7 @@ module Faker
       # band or musical act a stoked bro might listen to
       #
       # Faker::Stoked.band
-      # => "brodacious"
+      #   "brodacious"
       def adjective
         adjectives.sample
       end
@@ -445,7 +445,7 @@ module Faker
       # a stoked bro might be interested in
       #
       # Faker::Stoked.interest
-      # => "defying that which should be defied"
+      #   "defying that which should be defied"
       def interest
         interests.sample
       end
@@ -459,7 +459,7 @@ module Faker
       # a stoked bro might describe himself as having a stregh like this
       #
       # Faker::Stoked.strength
-      # => "hard charging"
+      #   "hard charging"
       def strength
         strengths.sample
       end

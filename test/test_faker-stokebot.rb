@@ -7,7 +7,6 @@ class TestFakerStokeBot < Minitest::Test
   describe "StokeBot" do 
 
     stokebot_methods = Faker::StokeBot.methods(false)
-    # standalone_methods = [:bio, :intmodifier]
     stokebot_methods.each do |stokebot_method|
 
       it "must respond to #{stokebot_method}" do 
