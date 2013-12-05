@@ -33,7 +33,6 @@ Gem::Specification.new do |s|
     "lib/faker_bro_words.rb",
     "lib/intro_file.txt",
     "lib/object_file.txt",
-    "lib/stoke_bot.rb",
     "lib/subject_file.txt",
     "lib/verb_file.txt",
     "test/helper.rb",
