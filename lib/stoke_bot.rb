@@ -4,34 +4,35 @@ module Faker
 
     class << self
 
-      def paragraphs(paragraph_count = 3)
-        paragraphs = []
-        paragraph_count.times do 
-          paragraphs << paragraph
-        end
-        paragraphs.join(" ")
-      end
-
-      # a stoked developer brodie might want multiple stoked paragraphs for her bros
-      # and/or brodies, and can pass in the number of paragraphs she would 
-      # like go generate as an argument.  Output similar to sentences()
+      # A stoked developer might want multiple stoked paragraphs for her bros
+      # and/or brodies.  Takes an argument for the desired number of paragraphs and 
+      # sentences per paragraph with a default of two paragraphs with 3 sentences 
+      # in each paragraph.
       #
-      # Faker::StokeBot.paragraphs(2)
+      # Faker::StokeBot.paragraphs(2, 3)
       #   "Whoah? the athlete/groupie constructed intuition suffices to account 
       #   for an important distinction in language use. By combining stoke and certain 
       #   reformulations of the dominant extreme paradigm, the appearance of 
-      #   non-stoked gaps in domains relatively inaccessible to ordinary" 
-
-
-      def paragraph 
-        sentences(5)
+      #   non-stoked gaps in domains relatively inaccessible to ordinary..." 
+      
+      def paragraphs(paragraph_count = 2, sentence_count = 3)
+        paragraphs = []
+        paragraph_count.times do 
+          paragraphs << paragraph(sentence_count)
+        end
+        paragraphs.join("\n  ")
       end
 
-      # a stoked developer bro might multiple stoked sentences for his bros, 
-      # in which case the bro would pass in the number of sentences he would 
-      # like go generate as an argument.  shout out to chomskybot, bro.
+      def paragraph(sentence_count = 3) 
+        sentences(sentence_count)
+      end
+
+      # A stoked developer might want multiple stoked sentences for her bros and/or
+      # brokies, in which case would would pass in the desired number fof sentences  
+      # as an argument.  Shout out to chomskybot by John Lawler and Kevin McGowan 
+      # (http://www-personal.umich.edu/~jlawler/foggy.faq.html)
       #
-      # Faker::StokeBot.sentence(8)
+      # Faker::StokeBot.sentences(8)
       #   "Whoah? the athlete/groupie constructed intuition suffices to account 
       #   for an important distinction in language use. By combining stoke and certain 
       #   reformulations of the dominant extreme paradigm, the appearance of 
@@ -55,11 +56,12 @@ module Faker
         sentences.join(" ")
       end
 
-      # a stoked developer bro might need a stoked sentence for his bros
+      # A stoked developer bro might need a stoked sentence for his bros
       #
       # Faker::StokeBot.sentence
-      #     "Brotastic but stokealicious skeleton rider. Love shredding sick pow, 
-      #     brodacious raising money for breast cancer, Gordon Lightfoot.""
+      #   "By combining stoke and certain reformulations of the dominant extreme 
+      #   paradigm, any broficient supporting stoke graph suffices to account 
+      #   for the system of base bro-words exclusive of the bro dialect."
       def sentence
         [intro, subject, verb, object].join(" ")
       end
