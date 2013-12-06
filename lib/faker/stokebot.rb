@@ -1,6 +1,6 @@
 module Faker
 
-  class StokeBot 
+  class Stoked 
 
     class << self
 
@@ -64,21 +64,21 @@ module Faker
         [intro, subject, verb, object].join(" ")
       end
 
-      def intro
-        File.readlines("lib/intro_file.txt").sample.delete("\n")
-      end
+      # def intro
+      #   File.readlines("lib/intro_file.txt").sample.delete("\n")
+      # end
 
-      def subject
-        File.readlines("lib/subject_file.txt").sample.delete("\n")
-      end
+      # def subject
+      #   File.readlines("lib/subject_file.txt").sample.delete("\n")
+      # end
 
-      def verb
-        File.readlines("lib/verb_file.txt").sample.delete("\n")
-      end
+      # def verb
+      #   File.readlines("lib/verb_file.txt").sample.delete("\n")
+      # end
 
-      def object
-        File.readlines("lib/object_file.txt").sample.delete("\n")
-      end
+      # def object
+      #   File.readlines("lib/object_file.txt").sample.delete("\n")
+      # end
     end
   end
 end
