@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Frederick D. Schoeneman"]
-  s.date = "2013-12-05"
+  s.date = "2013-12-06"
   s.description = "This is an extension of the faker gem, allowing stoked bros and brodies to effortlessly generate stoked bios, that are both radical and awesome while simultaneously pitted.  It also provides a rich, creamy variety of methods to generate bro words."
   s.email = "fred.schoeneman@gmail.com"
   s.extra_rdoc_files = [
@@ -28,15 +28,15 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "faker-stoked.gemspec",
-    "lib/faker/stoked.rb",
-    "lib/faker_bro_bio.rb",
-    "lib/faker_bro_words.rb",
-    "lib/intro_file.txt",
-    "lib/object_file.txt",
-    "lib/subject_file.txt",
-    "lib/verb_file.txt",
+    "lib/faker/bio.rb",
+    "lib/faker/bro_words.rb",
+    "lib/faker/stokebot.rb",
+    "lib/faker/stokebot/intro.rb",
+    "lib/faker/stokebot/object.rb",
+    "lib/faker/stokebot/subject.rb",
+    "lib/faker/stokebot/verb.rb",
+    "lib/stoked.rb",
     "test/helper.rb",
-    "test/test_faker-stokebot.rb",
     "test/test_faker-stoked.rb"
   ]
   s.homepage = "http://github.com/fdschoeneman/faker-stoked"
