@@ -12,8 +12,3 @@ require 'minitest/autorun'
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'faker/stoked'
-
-# class MiniTest::Unit::TestCase
-# end
-
-# MiniTest::Unit.autorun
