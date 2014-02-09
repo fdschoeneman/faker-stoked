@@ -1,6 +1,6 @@
 require 'helper'
 require 'active_support/inflector'
-require 'debugger'
+# require 'debugger'
 
 class TestFakerStoked < Minitest::Test
   
