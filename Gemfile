@@ -6,7 +6,7 @@ source "http://rubygems.org"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development, :test do
-
+  gem "debugger"
 	gem "faker", "~>1.2.0"
   gem "minitest", ">= 0"
   gem "rdoc", "~> 3.12"
