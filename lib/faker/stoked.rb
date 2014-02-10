@@ -1,4 +1,4 @@
-require 'debugger'
+# require 'debugger'
 require 'faker/bio'
 require 'faker/bro_words'
 require 'faker/stokebot'
