@@ -65,7 +65,7 @@ DEPENDENCIES
   activesupport
   bundler (~> 1.0)
   debugger
-  faker (~> 1.2.0)
+  faker (~> 1.2)
   jeweler (~> 1.8.7)
   minitest
   rdoc (~> 3.12)

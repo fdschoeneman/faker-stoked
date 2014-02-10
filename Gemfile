@@ -8,7 +8,7 @@ source "http://rubygems.org"
 
 group :development, :test do
   gem "debugger"
-	gem "faker", "~>1.2.0"
+	gem "faker", "~>1.2"
   gem "minitest", ">= 0"
   gem "rdoc", "~> 3.12"
   gem "bundler", "~> 1.0"
