@@ -28,7 +28,7 @@ module Faker
           "Por ejemplo",
           "With this trip,",
           "Conversely,",
-          "We have already been knowledge that",
+          "We have already been knowledged and/or learnified that",
           "By combining stoke and certain reformulations of the dominant extreme paradigm,",
           "I suggested that these bodaciouus images would flow from the realization that",
           "If the gestalt of the grinding in (99c) were only partially tangible to stokeologists,",
