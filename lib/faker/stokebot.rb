@@ -7,9 +7,10 @@ module Faker
       def paragraphs(paragraph_count = 3)
         paragraphs = []
         paragraph_count.times do 
+          paragraphs << "\t"
           paragraphs << paragraph
         end
-        paragraphs.join(" ")
+        paragraphs.join("\n")
       end
 
       # a stoked developer brodie might want multiple stoked paragraphs for her bros
