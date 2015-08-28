@@ -286,14 +286,11 @@ module Faker
           "Afbro",
           "autobrobile",
           "bee in your bronnet",
-          
-          
           "broactive",
           "broa constrictor",
           "brobot",
           "broca brola",
           "Brochi brOlympics",
-          "broceed",
           "brocycle",
           "brocodile",
           "brodeo",
