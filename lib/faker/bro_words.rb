@@ -104,7 +104,6 @@ module Faker
       def celebroties
         [
 
-          "AbrOham Lincoln",      
           "abroham lincoln",
           "adrien brody",
           "Broba Fett",
